@@ -1,0 +1,6 @@
+[config]
+swatch_count = 16
+
+[templates.sonora]
+input_path = '~/.config/matugen/templates/sonora.json'
+output_path = '~/.config/sonora/themes/matugen.json'
