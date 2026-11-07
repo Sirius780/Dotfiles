@@ -10,17 +10,16 @@ DIR="$(dirname "$(readlink -f "$0")")"
 echo ""
 echo "This will install various packages and dotfiles replacing yours."
 read -p "Are you sure you want to contiue? (Y/N): " ANSWER
+echo ""
 
 # The ! symbol makes the if work in reverse
 if [[ ! "$ANSWER" =~ ^[yY]$ ]]; then
 
     # Exits the script without changing anything
-    echo ""
     echo "The user has cancelled the installation..."
 else
     # Executes all the scripts
     bash "$DIR/scripts/sudo-feedback.sh"
     bash "$DIR/scripts/install-packages.sh"
-    echo ""
     echo "If you are reading this the installer worked"
 fi
