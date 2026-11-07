@@ -22,7 +22,8 @@ PACKAGES=(
     "zoxide"
     "eza"
     "fish"
-    "fisher"
+    "fzf"
+    "fd"
 )
 
 # Synchronizes repositories and installs packages
