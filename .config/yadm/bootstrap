@@ -19,7 +19,7 @@ if [[ ! "$ANSWER" =~ ^[yY]$ ]]; then
     echo "The user has cancelled the installation..."
 else
     # Executes all the scripts
-    bash "$DIR/scripts/cachyos-repo.sh"
+    sudo bash "$DIR/scripts/cachyos-repo.sh"
     bash "$DIR/scripts/install-packages-pacman.sh"
     bash "$DIR/scripts/install-packages-aur.sh"
     bash "$DIR/scripts/rice-up-discord.sh"
