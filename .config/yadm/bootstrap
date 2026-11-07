@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
-# Detener el script inmediatamente si algún comando o script falla/no existe
-set -e
 
-# Obtener la ruta absoluta de donde está guardado este bootstrap
-YADM_DIR="$(dirname "$(readlink -f "$0")")"
+# Gets the directory name
+DIR="$(dirname "$(readlink -f "$0")")"
 
-echo "Iniciando scripts de post-instalacion..."
+# Asks the user
+echo "This will install various packages and dotfiles replacing yours."
+read -p "Are you sure you want to contiue? (Y/N): " ANSWER
 
-# Ejecutar los scripts modulares directamente
-bash "$YADM_DIR/scripts/sudo-feedback.sh"
+# The ! symbol makes the if work in reverse
+if [[ ! "$ANSWER" =~ ^[yY]$ ]]; then
 
-echo "✔ Instalacion finalizada"
+    # Exits the script without changing anything
+    echo ""
+    echo "The user has cancelled the installation..."
+else
+    # Executes all the scripts
+    bash "$DIR/scripts/sudo-feedback.sh"
+    bash "$DIR/scripts/install-packages.sh"
+fi
