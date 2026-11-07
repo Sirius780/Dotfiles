@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Stops the scripts if it fails
+# Stops the script if any of the scripts fails
 set -e
 
 # Gets the directory name
