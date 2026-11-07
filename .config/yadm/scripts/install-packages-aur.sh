@@ -9,6 +9,8 @@ echo "Installing AUR packages via paru..."
 AUR_PACKAGES=(
     "ludusavi-bin"
     "sonora-bin"
+    "vencord-installer"
+    "vencord-hook"
 )
 
 # Install missing AUR packages automatically
