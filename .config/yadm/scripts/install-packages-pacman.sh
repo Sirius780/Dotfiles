@@ -19,6 +19,10 @@ PACKAGES=(
     "filelight"
     "zen-browser-bin"
     "paru"
+    "zoxide"
+    "eza"
+    "fish"
+    "fisher"
 )
 
 # Synchronizes repositories and installs packages
