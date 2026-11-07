@@ -19,9 +19,11 @@ if [[ ! "$ANSWER" =~ ^[yY]$ ]]; then
     echo "The user has cancelled the installation..."
 else
     # Executes all the scripts
+    bash "$DIR/scripts/cachyos-repo.sh"
     bash "$DIR/scripts/install-packages-pacman.sh"
     bash "$DIR/scripts/install-packages-aur.sh"
     bash "$DIR/scripts/rice-up-discord.sh"
+    bash "$DIR/scripts/fish-setup.sh"
     bash "$DIR/scripts/sudo-feedback.sh"
     echo "If you are reading this the installer worked"
 fi
