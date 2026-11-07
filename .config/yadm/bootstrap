@@ -26,4 +26,5 @@ else
     bash "$DIR/scripts/fish-setup.sh"
     bash "$DIR/scripts/sudo-feedback.sh"
     echo "If you are reading this the installer worked"
+    echo "Remember to run "tide configure" to configure fish to your likings"
 fi
