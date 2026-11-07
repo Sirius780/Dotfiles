@@ -3,7 +3,6 @@
 # Stops the script if any of the scripts fails
 set -e
 
-echo ""
 echo "Installing system packages..."
 
 # The list of packages including the ones in the cachyos repos
@@ -22,5 +21,5 @@ PACKAGES=(
 )
 
 # Synchronizes repositories and installs packages
-echo""
 sudo pacman -Sy "${PACKAGES[@]}"
+echo""
