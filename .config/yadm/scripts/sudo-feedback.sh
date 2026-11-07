@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Stops the scripts if it fails
+# Stops the script if it fails
 set -e
 
 echo "Enabling asteriks in sudo"
