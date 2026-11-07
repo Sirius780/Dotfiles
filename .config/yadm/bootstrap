@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Stop the scripts if it fails
+set -e
+
 # Gets the directory name
 DIR="$(dirname "$(readlink -f "$0")")"
 
