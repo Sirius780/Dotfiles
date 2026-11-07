@@ -1,3 +1,6 @@
+# Disables the fish greeting
+set -g fish_greeting ""
+
 # Replaces Cd with Zoxide
 command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
 
