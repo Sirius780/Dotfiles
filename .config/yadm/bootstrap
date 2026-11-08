@@ -20,6 +20,7 @@ if [[ ! "$ANSWER" =~ ^[yY]$ ]]; then
 else
     # Executes all the scripts
     sudo bash "$DIR/scripts/cachyos-repo.sh"
+    sudo bash "$DIR/scripts/cachyos-kernel.sh"
     bash "$DIR/scripts/install-packages-pacman.sh"
     bash "$DIR/scripts/install-packages-aur.sh"
     bash "$DIR/scripts/rice-up-discord.sh"
