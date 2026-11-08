@@ -24,6 +24,7 @@ PACKAGES=(
     "fish"
     "fzf"
     "fd"
+    "qview"
 )
 
 # Synchronizes repositories and installs packages
