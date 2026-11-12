@@ -7,6 +7,7 @@ echo "Installing system packages..."
 
 # The list of packages including the ones in the cachyos repos
 PACKAGES=(
+    "base-devel"
     "steam"
     "discord"
     "faugus-launcher"
