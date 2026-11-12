@@ -23,6 +23,7 @@ PACKAGES=(
     "zoxide"
     "eza"
     "fish"
+    "fisher"
     "fzf"
     "fd"
     "qview"
