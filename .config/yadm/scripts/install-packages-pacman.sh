@@ -7,26 +7,37 @@ echo "Installing system packages..."
 
 # The list of packages including the ones in the cachyos repos
 PACKAGES=(
+
+    # System packages
     "base-devel"
-    "steam"
-    "discord"
-    "faugus-launcher"
-    "proton-vpn-gtk-app"
-    "vim"
-    "ghostty"
-    "qbittorrent"
-    "mpv"
-    "qpwgraph"
-    "filelight"
-    "zen-browser-bin"
+    "git"
     "paru"
-    "zoxide"
+    "vim"
+
+    # Terminal apps
     "eza"
+    "fd"
     "fish"
     "fisher"
     "fzf"
-    "fd"
+    "ttf-0xproto-nerd"
+    "zoxide"
+
+    # User apps
+    "discord"
+    "faugus-launcher"
+    "mpv"
+    "proton-vpn-gtk-app"
+    "qbittorrent"
     "qview"
+    "steam"
+    "thunar"
+    "zen-browser-bin"
+
+    # Miscellaneous
+    "matugen"
+    "proton-cachyos-slr"
+    "qpwgraph"
 )
 
 # Synchronizes repositories and installs packages
