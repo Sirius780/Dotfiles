@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Stops the script if it fails
+# Stops the script if any of the downloads fail
 set -e
 
 echo "Installing AUR packages via paru..."
