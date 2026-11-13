@@ -5,8 +5,8 @@ set -e
 
 # Creates the necessary directory if it doesnt already exist
 echo "Making sure the necessary directories exist..."
-mkdir -p /boot/EFI/Linux
-mkdir -p /etc/kernel
+sudo mkdir -p /boot/EFI/Linux
+sudo mkdir -p /etc/kernel
 
 # Writes the system info into /etc/kernel/cmdline
 if [ ! -s /etc/kernel/cmdline ]; then
@@ -25,13 +25,14 @@ EOF
 
 # Installs the new kernel
 echo "Installing the cachyos kernel..."
-pacman -S --noconfirm linux-cachyos linux-cachyos-headers
+sudo pacman -S --noconfirm linux-cachyos linux-cachyos-headers
 echo "Kernel installed succesfully"
 
 #2 Deletes the old kernel)
 echo "Cleaning old kernel..."
-pacman -Rns --noconfirm linux linux-headers 2>/dev/null || true
-rm -f /etc/mkinitcpio.d/linux.preset
-rm -f /boot/EFI/Linux/arch-linux.efi
+sudo pacman -Rns --noconfirm linux 2>/dev/null || true
+sudo pacman -Rns --noconfirm linux-headers 2>/dev/null || true
+sudo rm -f /etc/mkinitcpio.d/linux.preset
+sudo rm -f /boot/EFI/Linux/arch-linux.efi
 echo "Old kernel cleaned"
 echo ""
