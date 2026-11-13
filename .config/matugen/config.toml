@@ -4,3 +4,19 @@ swatch_count = 16
 [templates.sonora]
 input_path = '~/.config/matugen/templates/sonora.json'
 output_path = '~/.config/sonora/themes/matugen.json'
+
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot-colors.ini'
+output_path = '~/.cache/matugen/foot-colors.ini'
+
+[templates.foot_live]
+input_path = '~/.config/matugen/templates/foot-sequences'
+output_path = '~/.cache/matugen/foot-sequences'
+post_hook = '''
+seq=$(sed 's/ESC/\x1b/g; s/BEL/\x07/g' ~/.cache/matugen/foot-sequences)
+for tty in /dev/pts/[0-9]*; do
+    if [ -w "$tty" ]; then
+        printf "%s" "$seq" > "$tty"
+    fi
+done
+'''
