@@ -1,7 +1,7 @@
 [config]
 swatch_count = 16
 
-[templates.vesktop]
+[templates.vencord]
 input_path = '~/.config/matugen/templates/midnight-discord.css'
 output_path = '~/.config/Vencord/themes/midnight-discord.css'
 
