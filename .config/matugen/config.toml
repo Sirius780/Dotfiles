@@ -1,6 +1,10 @@
 [config]
 swatch_count = 16
 
+[templates.vesktop]
+input_path = '~/.config/matugen/templates/midnight-discord.css'
+output_path = '~/.config/Vencord/themes/midnight-discord.css'
+
 [templates.sonora]
 input_path = '~/.config/matugen/templates/sonora.json'
 output_path = '~/.config/sonora/themes/matugen.json'
