@@ -38,3 +38,4 @@ Include = /etc/pacman.d/cachyos-mirrorlist\
 sudo pacman -Syu
 
 echo "Cachyos repos are now installed and enabled"
+echo ""
