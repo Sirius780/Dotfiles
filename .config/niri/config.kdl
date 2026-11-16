@@ -1,0 +1,6 @@
+include "input.kdl" optional=true
+include "outputs.kdl" optional=true
+include "binds.kdl" optional=true
+include "layout.kdl" optional=true
+include "colors.kdl" optional=true
+include "env.kdl" optional=true

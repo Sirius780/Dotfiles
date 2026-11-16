@@ -1,0 +1,51 @@
+binds {
+    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
+    Ctrl+M allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    Mod+0 hotkey-overlay-title="Media: Next Track" { spawn "dms" "ipc" "call" "mpris" "next"; }
+    Mod+8 hotkey-overlay-title="Media: Play/Pause" { spawn "dms" "ipc" "call" "mpris" "playPause"; }
+    Mod+9 hotkey-overlay-title="Media: Previous Track" { spawn "dms" "ipc" "call" "mpris" "previous"; }
+    Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
+    Mod+Ctrl+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+Equal allow-when-locked=true hotkey-overlay-title="Volume Up (10%)" { spawn "dms" "ipc" "call" "audio" "increment" "10"; }
+    Mod+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Mod+M hotkey-overlay-title="Media" { spawn "dms" "ipc" "call" "dash" "toggle" "media"; }
+    Mod+Minus allow-when-locked=true hotkey-overlay-title="Volume Down (10%)" { spawn "dms" "ipc" "call" "audio" "decrement" "10"; }
+    Mod+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    Mod+Shift+Slash hotkey-overlay-title="Keyboard Shortcuts" { spawn "dms" "ipc" "call" "keybinds" "toggle" "niri"; }
+    Mod+Shift+W hotkey-overlay-title="Create window rule" { spawn "dms" "ipc" "call" "window-rules" "toggle"; }
+    Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dash" "toggle" "wallpaper"; }
+    Mod+space repeat=false cooldown-ms=1 allow-inhibiting=false hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Print hotkey-overlay-title="Screenshot: Full Screen" { spawn "dms" "screenshot" "full"; }
+    Mod+Ctrl+Down { move-column-to-workspace-down; }
+    Mod+Ctrl+Up { move-column-to-workspace-up; }
+    Mod+Down hotkey-overlay-title="Focus Workspace Down" { focus-workspace-down; }
+    Mod+Up hotkey-overlay-title="Focus Workspace Up" { focus-workspace-up; }
+    Alt+F4 repeat=false { close-window; }
+    Ctrl+Shift+F hotkey-overlay-title="Maximize Column" { maximize-column; }
+    Mod+Alt+Down hotkey-overlay-title="Set Window Height" { set-window-height "+10%"; }
+    Mod+Alt+F hotkey-overlay-title="Fullscreen" { fullscreen-window; }
+    Mod+Alt+Left hotkey-overlay-title="Set Column Width" { set-column-width "-10%"; }
+    Mod+Alt+Right hotkey-overlay-title="Set Column Width" { set-column-width "+10%"; }
+    Mod+Alt+Up hotkey-overlay-title="Set Window Height" { set-window-height "-10%"; }
+    Mod+Backslash { toggle-window-floating; }
+    Mod+C { center-column; }
+    Mod+Ctrl+F { expand-column-to-available-width; }
+    Mod+Ctrl+Left { move-column-left; }
+    Mod+Ctrl+Right { move-column-right; }
+    Mod+F { maximize-column; }
+    Mod+H hotkey-overlay-title="Cycle Column Width" { switch-preset-column-width; }
+    Mod+Left { focus-column-left; }
+    Mod+Q repeat=false { close-window; }
+    Mod+R { switch-preset-column-width; }
+    Mod+Right { focus-column-right; }
+    Mod+Shift+Down { move-window-down; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+Up { move-window-up; }
+    Mod+E { spawn "thunar"; }
+    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "foot"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "foot"; }
+    Mod+W { spawn "zen-browser"; }
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+Home repeat=false { toggle-overview; }
+}

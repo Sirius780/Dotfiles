@@ -1,0 +1,7 @@
+output "Microstep MSI MP225V PE0M015303433" {
+    mode "1920x1080@100.000"
+    scale 1.0
+    transform "normal"
+    position x=0 y=0
+    variable-refresh-rate on-demand=true
+}

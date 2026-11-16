@@ -1,0 +1,22 @@
+input {
+    keyboard {
+        xkb {
+            layout "us"
+            variant "altgr-intl-nodeadkeys"
+        }
+        repeat-delay 600
+	repeat-rate 25
+    }
+    mouse {
+        accel-profile "flat"
+    }
+    disable-power-key-handling
+    warp-mouse-to-focus mode="center-xy"
+    focus-follows-mouse max-scroll-amount="0%"
+}
+cursor {
+    xcursor-theme "Vimix-white-cursors"
+    xcursor-size 30
+    hide-when-typing
+    hide-after-inactive-ms 10000
+}
