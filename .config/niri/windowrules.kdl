@@ -1,0 +1,39 @@
+window-rule {
+    geometry-corner-radius 1
+    clip-to-geometry true
+}
+
+// Aplications floating
+window-rule {
+    match app-id="^thunar$" title="(Renombrar|Progreso)"
+    match app-id="^blueman-manager$"
+    match app-id="qView"
+    match app-id="^mpv$"
+    open-floating true
+}
+
+// Steam client
+window-rule {
+    match app-id="^steam$" title="^Steam$"
+    open-maximized true
+}
+
+// Games
+window-rule {
+    match app-id="^steam_app"
+    //open-fullscreen true
+}
+
+// Picture in picture
+window-rule {
+    match app-id="^zen$" title="^Picture-in-Picture$"
+    open-floating true
+    default-floating-position x=16 y=16 relative-to="top-right"
+}
+
+// Steam notification
+window-rule {
+    match app-id="^steam$" title=r"^notificationtoasts_\d+_desktop$"
+    default-floating-position x=0 y=0 relative-to="bottom-right"
+    open-focused false
+}

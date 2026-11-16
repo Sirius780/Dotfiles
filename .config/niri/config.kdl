@@ -1,6 +1,12 @@
+//spawn-at-startup "waybar"
+hotkey-overlay {
+    skip-at-startup
+    hide-not-bound
+}
 include "input.kdl" optional=true
 include "outputs.kdl" optional=true
 include "binds.kdl" optional=true
 include "layout.kdl" optional=true
 include "colors.kdl" optional=true
 include "env.kdl" optional=true
+include "windowrules.kdl" optional=true
