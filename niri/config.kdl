@@ -1,8 +1,11 @@
 //spawn-at-startup "waybar"
+spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
+
 hotkey-overlay {
     skip-at-startup
     hide-not-bound
 }
+
 include "input.kdl" optional=true
 include "outputs.kdl" optional=true
 include "binds.kdl" optional=true
