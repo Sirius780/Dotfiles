@@ -11,6 +11,8 @@ PACKAGES=(
     # System packages
     "base-devel"
     "git"
+    "fuzzel"
+    "libsecret"
     "paru"
     "vim"
 
@@ -34,10 +36,22 @@ PACKAGES=(
     "thunar"
     "zen-browser-bin"
 
-    # Miscellaneous
-    "matugen"
+    # Gaming
+    "mangojuice"
     "proton-cachyos-slr"
+    ""
+    ""
+    ""
+
+    # Desktop
+    "cliphist"
+    "matugen"
+    "niri"
     "qpwgraph"
+    "fuzzel"
+    "stow"
+    ""
+    ""
 )
 
 # Synchronizes repositories and installs packages
