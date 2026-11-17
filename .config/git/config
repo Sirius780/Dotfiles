@@ -1,0 +1,5 @@
+[user]
+	email = sirius708@proton.me
+	name = sirius780
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
