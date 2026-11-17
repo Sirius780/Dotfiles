@@ -1,6 +1,13 @@
+// All windows
 window-rule {
-    geometry-corner-radius 1
+    geometry-corner-radius 2
+    tiled-state true
     clip-to-geometry true
+    //draw-border-with-background false
+    background-effect {
+        blur true
+        xray false
+    }
 }
 
 // Aplications floating

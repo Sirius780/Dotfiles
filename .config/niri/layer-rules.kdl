@@ -1,0 +1,17 @@
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^launcher$"
+    shadow {
+        on
+        softness 16
+        spread 8
+    }
+    background-effect {
+        blur true
+        xray false
+    }
+}

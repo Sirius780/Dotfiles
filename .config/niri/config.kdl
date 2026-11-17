@@ -9,4 +9,5 @@ include "binds.kdl" optional=true
 include "layout.kdl" optional=true
 include "colors.kdl" optional=true
 include "env.kdl" optional=true
-include "windowrules.kdl" optional=true
+include "window-rules.kdl" optional=true
+include "layer-rules.kdl" optional=true

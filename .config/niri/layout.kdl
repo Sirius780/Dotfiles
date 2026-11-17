@@ -5,22 +5,12 @@ layout {
     }
     shadow {
         on
-	softness 8
+	softness 16
 	spread 8
-    }
-    insert-hint {
-        on
     }
     gaps 16
     always-center-single-column
     empty-workspace-above-first
     background-color "transparent"
     //fullscreen-backdrop-color "transparent"
-}
-layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
-}
-window-rule {
-    tiled-state true
 }
