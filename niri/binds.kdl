@@ -15,7 +15,7 @@ binds {
     Mod+Shift+W hotkey-overlay-title="Create window rule" { spawn "dms" "ipc" "call" "window-rules" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dash" "toggle" "wallpaper"; }
-    Mod+space repeat=false cooldown-ms=1 allow-inhibiting=false hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    //Mod+space repeat=false cooldown-ms=1 allow-inhibiting=false hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Print hotkey-overlay-title="Screenshot: Full Screen" { spawn "dms" "screenshot" "full"; }
     Mod+Ctrl+Down { move-column-to-workspace-down; }
     Mod+Ctrl+Up { move-column-to-workspace-up; }
@@ -43,6 +43,7 @@ binds {
     Mod+Shift+F { fullscreen-window; }
     Mod+Shift+Up { move-window-up; }
     Mod+E { spawn "thunar"; }
+    Mod+space { spawn "sh" "-c" "pkill -x fuzzel || fuzzel"; }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "foot"; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "foot"; }
     Mod+W { spawn "zen-browser"; }
