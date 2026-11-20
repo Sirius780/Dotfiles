@@ -31,6 +31,7 @@ PACKAGES=(
     "mpv"
     "proton-vpn-gtk-app"
     "qbittorrent"
+    "qpwgraph"
     "qview"
     "steam"
     "thunar"
@@ -39,19 +40,16 @@ PACKAGES=(
     # Gaming
     "mangojuice"
     "proton-cachyos-slr"
-    ""
-    ""
-    ""
 
     # Desktop
+    "adw-gtk-theme"
     "cliphist"
     "matugen"
     "niri"
-    "qpwgraph"
     "fuzzel"
     "stow"
-    ""
-    ""
+    "ttf-jetbrains-mono-nerd"
+
 )
 
 # Synchronizes repositories and installs packages
