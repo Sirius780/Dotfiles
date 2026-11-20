@@ -1,4 +1,3 @@
-//spawn-at-startup "waybar"
 spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
 
 hotkey-overlay {
@@ -14,3 +13,6 @@ include "colors.kdl" optional=true
 include "env.kdl" optional=true
 include "window-rules.kdl" optional=true
 include "layer-rules.kdl" optional=true
+
+// DMS Include Configs
+include "dms/binds.kdl"
