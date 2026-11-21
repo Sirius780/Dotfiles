@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>foot</icon>
+	<name>Abrir Terminal Aqui</name>
+	<submenu></submenu>
+	<unique-id>1795301274531616-2</unique-id>
+	<command>xdg-terminal-exec --dir=%f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
