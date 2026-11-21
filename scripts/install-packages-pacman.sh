@@ -40,6 +40,7 @@ PACKAGES=(
     # Gaming
     "mangojuice"
     "proton-cachyos-slr"
+    "umu-launcher"
 
     # Desktop
     "adw-gtk-theme"
