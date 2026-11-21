@@ -23,6 +23,15 @@ PRESETS=('default')
 default_uki="/boot/EFI/Linux/arch-linux-cachyos.efi"
 EOF
 
+# Injects the systemd-boot config
+echo "Configuring systemd-boot..."
+sudo tee /boot/loader/loader.conf > /dev/null << 'EOF'
+default arch-linux-cachyos.efi
+auto-firmware yes
+editor yes
+timeout 0
+EOF
+
 # Installs the new kernel
 echo "Installing the cachyos kernel..."
 sudo pacman -S --noconfirm linux-cachyos linux-cachyos-headers
