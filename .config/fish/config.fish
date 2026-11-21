@@ -2,7 +2,7 @@
 set -g fish_greeting ""
 
 # en ingle que el doblaje eh malisimo
-set -gx LC_MESSAGES C.UTF-8
+set -gx LC_MESSAGES C.utf8
 
 # Replaces Cd with Zoxide
 command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
