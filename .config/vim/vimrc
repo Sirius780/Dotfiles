@@ -1,3 +1,4 @@
 set viminfofile=~/.config/vim/viminfo
 set clipboard=unnamedplus
+set mouse=a
 syntax on
