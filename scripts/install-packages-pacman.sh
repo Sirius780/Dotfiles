@@ -44,9 +44,10 @@ PACKAGES=(
     # Desktop
     "adw-gtk-theme"
     "cliphist"
+    "fuzzel"
     "matugen"
     "niri"
-    "fuzzel"
+    "qtcurve"
     "stow"
     "ttf-jetbrains-mono-nerd"
 
