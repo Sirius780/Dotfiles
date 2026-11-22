@@ -3,6 +3,9 @@
 # Stops the script if it fails
 set -e
 
+# Starting discord to create its folders
+timeout -s KILL 15s discord
+
 # instruction for the user
 echo "Installing Vencord and Openasar"
 echo "Please select your discord client location when prompted"

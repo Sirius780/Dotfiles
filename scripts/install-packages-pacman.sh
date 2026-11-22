@@ -58,9 +58,12 @@ PACKAGES=(
     "matugen"
     "niri"
     "papirus-icon-theme"
+    "qt5ct"
+    "qt6ct"
     "qtcurve"
     "stow"
     "ttf-jetbrains-mono-nerd"
+    "xdg-desktop-portal-gnome"
 
 
 )

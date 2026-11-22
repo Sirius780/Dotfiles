@@ -8,7 +8,8 @@ sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key F3B607488DB35A47
 
 # Downloads and installs the packages that contains the repos
-sudo pacman -U 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst' \
+sudo pacman -U \
+'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst' \
 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-mirrorlist-27-1-any.pkg.tar.zst' \
 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v3-mirrorlist-27-1-any.pkg.tar.zst' \
 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v4-mirrorlist-27-1-any.pkg.tar.zst' \
@@ -35,6 +36,8 @@ Include = /etc/pacman.d/cachyos-mirrorlist\
 ' /etc/pacman.conf
 
 # Install all the new package versions
+sudo pacman -Sy
+sudo pacman -S cachyos/pacman
 sudo pacman -Syu
 
 echo "Cachyos repos are now installed and enabled"
