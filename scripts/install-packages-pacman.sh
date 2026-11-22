@@ -44,7 +44,6 @@ PACKAGES=(
     "thunar-archive-plugin"
     "thunar-volman"
     "tumbler"
-    "xdg-terminal-exec"
 
     # Gaming
     "faugus-launcher"
