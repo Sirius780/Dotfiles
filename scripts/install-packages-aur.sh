@@ -9,6 +9,7 @@ echo "Installing AUR packages via paru..."
 AUR_PACKAGES=(
     "ludusavi-bin"
     "sonora-bin"
+    "pinapp"
     "vencord-installer"
     "vencord-hook"
 )
