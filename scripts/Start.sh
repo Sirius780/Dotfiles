@@ -24,6 +24,7 @@ else
     bash "$DIR/ntsync.sh"
     bash "$DIR/install-packages-pacman.sh"
     bash "$DIR/install-packages-aur.sh"
+    bash "$DIR/papirus-folders-setup.sh"
     bash "$DIR/rice-up-discord.sh"
     bash "$DIR/keyring-setup.sh"
     bash "$DIR/fish-setup.sh"
