@@ -12,7 +12,7 @@ input {
     }
     warp-mouse-to-focus
     disable-power-key-handling
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="30%"
 }
 cursor {
     xcursor-theme "Vimix-white-cursors"

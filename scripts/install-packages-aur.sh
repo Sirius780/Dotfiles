@@ -10,6 +10,8 @@ AUR_PACKAGES=(
     "ludusavi-bin"
     "sonora-bin"
     "pinapp"
+    "freesmlauncher-bin"
+    "jre21-temurin"
     "vencord-installer"
     "vencord-hook"
 )

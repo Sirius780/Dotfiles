@@ -61,6 +61,10 @@ index = 1
 input_path = '~/.config/matugen/templates/fuzzel.ini'
 output_path = '~/.config/fuzzel/colors.ini'
 
+[templates.freesmlauncher]
+input_path = '~/.config/matugen/templates/freesmlauncher.json'
+output_path = '~/.local/share/FreesmLauncher/themes/Matugen/theme.json'
+
 [templates.vencord]
 input_path = '~/.config/matugen/templates/midnight-discord.css'
 output_path = '~/.config/Vencord/themes/midnight-discord.css'
