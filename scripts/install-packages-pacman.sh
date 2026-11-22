@@ -27,17 +27,27 @@ PACKAGES=(
 
     # User apps
     "discord"
-    "faugus-launcher"
     "mpv"
     "proton-vpn-gtk-app"
     "qbittorrent"
     "qpwgraph"
     "qview"
     "steam"
-    "thunar"
     "zen-browser-bin"
 
+    # Explorer
+    "ffmpegthumbnailer"
+    "file-roller"
+    "gvfs"
+    "poppler-glib"
+    "thunar"
+    "thunar-archive-plugin"
+    "thunar-volman"
+    "tumbler"
+    "xdg-terminal-exec"
+
     # Gaming
+    "faugus-launcher"
     "mangojuice"
     "proton-cachyos-slr"
     "umu-launcher"
@@ -48,9 +58,11 @@ PACKAGES=(
     "fuzzel"
     "matugen"
     "niri"
+    "papirus-icon-theme"
     "qtcurve"
     "stow"
     "ttf-jetbrains-mono-nerd"
+
 
 )
 
