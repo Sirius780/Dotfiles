@@ -4,11 +4,28 @@
 	<icon>foot</icon>
 	<name>Abrir Terminal Aqui</name>
 	<submenu></submenu>
-	<unique-id>1795301274531616-2</unique-id>
-	<command>xdg-terminal-exec --dir=%f</command>
+	<unique-id>1795375881614008-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description></description>
-	<range>*</range>
+	<range></range>
 	<patterns>*</patterns>
+	<startup-notify/>
 	<directories/>
+</action>
+<action>
+	<icon>foot</icon>
+	<name>Ejecutar en una Terminal</name>
+	<submenu></submenu>
+	<unique-id>1795376209260776-1</unique-id>
+	<command>exo-open --launch TerminalEmulator %f</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
 </action>
 </actions>
