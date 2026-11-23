@@ -13,8 +13,10 @@ window-rule {
 // Aplications floating
 window-rule {
     match app-id="^thunar$" title="(Renombrar|Progreso)"
+    match app-id="^org.gnome.FileRoller$" title="Comprimir"
+    match app-id="^exo-desktop-item-edit$"
     match app-id="^blueman-manager$"
-    match app-id="qView"
+    match app-id="^com.interversehq.qView$"
     match app-id="^mpv$"
     open-floating true
 }
