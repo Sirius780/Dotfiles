@@ -10,6 +10,7 @@ AUR_PACKAGES=(
     "ludusavi-bin"
     "sonora-bin"
     "pinapp"
+    "appimage-thumbnailer"
     "freesmlauncher-bin"
     "jre21-temurin"
     "sysc-greet"
