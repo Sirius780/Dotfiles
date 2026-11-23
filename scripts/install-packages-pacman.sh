@@ -44,6 +44,7 @@ PACKAGES=(
     "thunar-archive-plugin"
     "thunar-volman"
     "tumbler"
+    "xdg-terminal-exec"
 
     # Gaming
     "faugus-launcher"
@@ -57,13 +58,10 @@ PACKAGES=(
     "fuzzel"
     "matugen"
     "niri"
-    "papirus-icon-theme"
-    "qt5ct"
-    "qt6ct"
     "qtcurve"
     "stow"
     "ttf-jetbrains-mono-nerd"
-    "xdg-desktop-portal-gnome"
+    "vimix-cursors"
 
 
 )

@@ -20,5 +20,5 @@ AUR_PACKAGES=(
 )
 
 # Install missing AUR packages automatically
-paru -S --noconfirm --needed "${AUR_PACKAGES[@]}"
+paru -S "${AUR_PACKAGES[@]}"
 echo ""
