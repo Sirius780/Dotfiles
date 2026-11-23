@@ -1,0 +1,32 @@
+[general]
+directory = "~/Wallpapers"
+recursive = false
+backend = "awww"
+
+[backend.awww]
+args = ["--transition-type", "center"]
+
+[window]
+close_on_focus_loss = true
+close_on_apply = true
+position = "center"
+background = "none"
+
+[animation]
+navigation_ms = 500
+zoom_percent = 10
+
+[grid]
+columns = 7
+carousel = true
+edge = "fade"
+sort = "color"
+spacing = 0
+radius = 2
+
+[thumbnail]
+height = 512
+width = 288
+
+[hooks]
+on_apply =["matugen image {path} --source-color-index 0"]
