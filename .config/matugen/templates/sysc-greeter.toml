@@ -1,0 +1,23 @@
+# matugen.toml
+name = "Matugen"
+
+[colors]
+# Fondos de la interfaz y base de los degradados (Fire / Matrix)
+bg_base = "{{colors.surface.default.hex}}"
+bg_active = "{{colors.surface_container_high.default.hex}}"
+
+# Colores principales de acento (Rain / Fireworks / punta del Fire y Matrix)
+primary = "{{colors.primary.default.hex}}"
+secondary = "{{colors.secondary.default.hex}}"
+accent = "{{colors.tertiary.default.hex}}"
+
+# Tonos cálidos/alerta (necesarios para el tramo medio del efecto Fire)
+warning = "{{colors.tertiary_fixed_dim.default.hex}}"
+danger = "{{colors.error.default.hex}}"
+
+# Textos y bordes
+fg_primary = "{{colors.on_surface.default.hex}}"
+fg_secondary = "{{colors.on_surface_variant.default.hex}}"
+fg_muted = "{{colors.outline.default.hex}}"
+border_focus = "{{colors.primary.default.hex}}"
+

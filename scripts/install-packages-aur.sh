@@ -12,6 +12,8 @@ AUR_PACKAGES=(
     "pinapp"
     "freesmlauncher-bin"
     "jre21-temurin"
+    "sysc-greet"
+    "matuwall-bin"
     "vencord-installer"
     "vencord-hook"
 )
