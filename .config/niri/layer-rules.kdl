@@ -1,6 +1,12 @@
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="^awww-daemon$"
     place-within-backdrop true
+}
+
+// BORRAR AL DEJAR DE USAR DANK SHELL
+layer-rule {
+    match namespace="^quickshell"
+    opacity 0.0
 }
 
 layer-rule {
