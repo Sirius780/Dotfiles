@@ -23,6 +23,7 @@ PACKAGES=(
     "fisher"
     "fzf"
     "ttf-0xproto-nerd"
+    "yazi"
     "zoxide"
 
     # User apps

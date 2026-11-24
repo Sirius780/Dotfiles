@@ -2,7 +2,7 @@ input {
     keyboard {
         xkb {
             layout "us"
-            variant "intl-nodeadkeys"
+            variant "altgr-intl"
         }
         repeat-delay 600
 	repeat-rate 25
