@@ -3,6 +3,9 @@ if status is-interactive
 # Disables the fish greeting
 set -g fish_greeting ""
 
+# Sets vim as default
+set -gx EDITOR vim 
+
 # en ingle que el doblaje eh malisimo
 set -gx LC_MESSAGES C.utf8
 
