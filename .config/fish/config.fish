@@ -26,6 +26,8 @@ end
 
 # Abbrs
 abbr -a gs git status
-abbr -a gc --set-cursor 'git commit -am "%"'
+abbr -a gc --set-cursor 'git commit -m "%"'
+abbr -a gca --set-cursor 'git commit -am "%"'
 abbr -a gp git push
+abbr -a ga git add
 end
