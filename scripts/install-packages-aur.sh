@@ -8,6 +8,7 @@ echo "Installing AUR packages via paru..."
 # AUR packages list
 AUR_PACKAGES=(
     "ludusavi-bin"
+    "cmd-polkit-git"
     "sonora-bin"
     "pinapp"
     "appimage-thumbnailer"
