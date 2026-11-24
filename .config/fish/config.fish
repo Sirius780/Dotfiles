@@ -1,3 +1,5 @@
+if status is-interactive
+
 # Disables the fish greeting
 set -g fish_greeting ""
 
@@ -7,8 +9,23 @@ set -gx LC_MESSAGES C.utf8
 # Replaces Cd with Zoxide
 command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
 
-# Replaces Ls with Eza
-command -v eza &> /dev/null && alias ls='eza --icons --group-directories-first -1'
+# Uses yazi to move between directories
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	command yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end
 
-# Adds fzf binds through a fish plugin
-fzf_configure_bindings --directory=\ct --history=\cr
+# Calls that function with Ctrl + y
+function fish_user_key_bindings
+	bind \cy 'y; commandline -f repaint'
+end
+
+# Abbrs
+abbr -a gs git status
+abbr -a gc --set-cursor 'git commit -am "%"'
+abbr -a gp git push
+end

@@ -7,8 +7,9 @@ output_path = '~/.config/niri/colors.kdl'
 post_hook = 'niri msg action load-config-file'
 
 [templates.sysc_greet]
-input_path = "~/.config/matugen/templates/sysc-greeter.toml"
-output_path = "~/.config/sysc-greet/themes/matugen.toml"
+input_path = '~/.config/matugen/templates/sysc-greeter.toml'
+output_path = '~/.cache/matugen/sysc-greet.toml'
+post_hook = 'sudo cp -P ~/.cache/matugen/sysc-greet.toml /usr/share/sysc-greet/themes/matugen.toml'
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
@@ -76,6 +77,10 @@ output_path = '~/.config/Vencord/themes/midnight-discord.css'
 [templates.sonora]
 input_path = '~/.config/matugen/templates/sonora.json'
 output_path = '~/.config/sonora/themes/matugen.json'
+
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
 
 [templates.foot]
 input_path = '~/.config/matugen/templates/foot-colors.ini'
