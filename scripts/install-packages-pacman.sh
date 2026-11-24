@@ -12,6 +12,7 @@ PACKAGES=(
     "base-devel"
     "git"
     "fuzzel"
+    "jq"
     "libsecret"
     "paru"
     "vim"
@@ -63,7 +64,6 @@ PACKAGES=(
     "stow"
     "ttf-jetbrains-mono-nerd"
     "vimix-cursors"
-
 
 )
 
