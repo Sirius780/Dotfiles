@@ -22,7 +22,7 @@
   "hide-on-clear": true,
   "hide-on-action": true,
   "relative-timestamps": true,
-  "text-empty": "No Notification",
+  "text-empty": "Sin Notificaciones",
 
   "widgets": [
     "title",
@@ -34,9 +34,12 @@
 
   "widget-config": {
     "title": {
-      "text": "Notification Center",
+      "text": "Notificaciones",
       "clear-all-button": true,
-      "button-text": "󰆴 Clear All"
+      "button-text": "󰆴 Vaciar"
+    },
+    "dnd": {
+      "text": "No Molestar"
     },
     "notifications": {
       "vexpand": true
