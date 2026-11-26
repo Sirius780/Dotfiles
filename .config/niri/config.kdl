@@ -2,6 +2,8 @@ spawn-at-startup "awww-daemon"
 spawn-at-startup "matuwall" "--restore"
 spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
 //spawn-at-startup "sh" "-c" "~/.config/fuzzel/fuzzel-polkit-agent"
+//spawn-at-startup "swaync"
+
 
 hotkey-overlay {
     skip-at-startup

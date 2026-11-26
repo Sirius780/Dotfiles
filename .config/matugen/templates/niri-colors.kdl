@@ -13,6 +13,7 @@ layout {
 
     shadow {
         color "{{colors.shadow.default.hex}}70"
+        inactive-color "{{colors.shadow.default.hex}}70"
     }
 
     tab-indicator {

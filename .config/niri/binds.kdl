@@ -49,5 +49,6 @@ binds {
     Mod+Y { spawn "matuwall"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Home repeat=false { toggle-overview; }
+    Mod+K hotkey-overlay-title="Abrir centro de notificaciones" {spawn "swaync-client" "-t" "-sw"; }
     Mod+V { spawn "sh" "-c" "pkill -x fuzzel || (cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy)"; }
 }
