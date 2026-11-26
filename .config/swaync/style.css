@@ -2,7 +2,7 @@
 
 * {
   font-family: "JetBrainsMono NFM SemiBold", monospace;
-  border-radius: 2;
+  border-radius: 2px;
 }
 
 .control-center .notification-row:focus,
@@ -37,7 +37,7 @@
 .widget-mpris>box>button,
 .widget-mpris-player,
 .widget-mpris-album-art {
-  border-radius: 2;
+  border-radius: 2px;
 }
 
 .notification {
@@ -55,7 +55,7 @@
   margin-right: 5px;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  border-radius: 2;
+  border-radius: 0;
   border: none;
 }
 
@@ -164,7 +164,7 @@
 
 .widget-dnd>switch {
   background: @blue-base;
-  border-radius: 2;
+  border-radius: 2px;
 }
 
 .widget-dnd>switch:checked {
